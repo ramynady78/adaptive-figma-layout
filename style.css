@@ -30,7 +30,9 @@
 }
 
 .logo img {
-    height: 40px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
 }
 
 .nav-container {
@@ -2053,8 +2055,11 @@ p {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    gap:1rem;
 }
-
+.contact-item .telegram{
+    padding: 1rem 0;
+}
 .contact-item h3 {
     font-size: 16px;
     font-weight: bold;
@@ -2074,10 +2079,36 @@ p {
 }
 
 .telegram-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin-left: 15px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0088cc, #00aced);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 12px rgba(0, 136, 204, 0.4);
+    cursor: pointer;
 }
+
+.telegram-icon img {
+    width: 60%;
+    height: 60%;
+    transition: transform 0.4s ease;
+}
+
+.telegram-icon:hover {
+    transform: translateY(-6px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 136, 204, 0.6);
+    background: linear-gradient(135deg, #00aced, #0088cc);
+}
+
+.telegram-icon:hover img {
+    transform: rotate(15deg);
+}
+
+
 
 @media (max-width: 768px) {
     .contact-content {
@@ -2161,7 +2192,6 @@ p {
     color: #ffffff;
 }
 
-/* للشاشات الصغيرة */
 @media (max-width: 768px) {
     .footer-links {
         display: flex;
